@@ -7,9 +7,6 @@ const Booking = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Add your booking submission logic here
-    // You can send the booking details to your backend or perform any other necessary actions
     console.log('Booking submitted:', { pickupDate, returnDate, numberOfPassengers });
   };
 

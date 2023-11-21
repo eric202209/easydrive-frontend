@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getObjects } from '../service/apiService';
 import { Link } from 'react-router-dom';
-//const BASE_URL = 'mongodb+srv://ychuguno:12345easydrive@easydriveproject.7xmelkl.mongodb.net/?retryWrites=true&w=majority';
-
 
 const CarList = () => {
   const [carList, setCarList] = useState([]);

@@ -1,5 +1,4 @@
-const BASE_URL = 'mongodb+srv://ychuguno:12345easydrive@easydriveproject.7xmelkl.mongodb.net/?retryWrites=true&w=majority';
-//const BASE_URL = 'http://localhost:3000/api';
+const BASE_URL = 'http://localhost:3000/api';
 
 // Create operation
 export const createObject = async (newObject) => {

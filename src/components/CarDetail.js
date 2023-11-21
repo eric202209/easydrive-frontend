@@ -8,7 +8,6 @@ const CarDetail = () => {
   useEffect(() => {
     const fetchCarDetails = async () => {
       try {
-        // Assuming you have an API endpoint to fetch car details by carId
         const response = await fetch(`http://localhost:3000/api/cars/${carId}`);
         const data = await response.json();
         setCarDetails(data);
