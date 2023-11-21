@@ -10,6 +10,7 @@ import CarList from './components/CarList';
 import CarDetail from './components/CarDetail';
 import Booking from './components/Booking'; 
 import About from './components/About';
+import Welcome from './components/Welcome';
 
 function App() {
   const isAuthenticated = true;
@@ -18,7 +19,8 @@ function App() {
       <div className="App">
         <Navigation isAuthenticated={isAuthenticated} />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Welcome />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/profile" element={<Profile />} />
@@ -26,7 +28,6 @@ function App() {
           <Route path="/cars/:carId" element={<CarDetail />} />
           <Route path="/booking" element={<Booking />} />
           <Route path="/about" element={<About />} />
-
         </Routes>
       </div>
     </Router>

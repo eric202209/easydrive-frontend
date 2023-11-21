@@ -6,12 +6,12 @@ const Navigation = ({ isAuthenticated }) => {
   return (
     <nav>
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/booking">Booking</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/cars">Cars</Link></li>
+        <li><Link to="/home">Home</Link></li>
         {isAuthenticated ? (
           <>
+            <li><Link to="/booking">Booking</Link></li>
+            <li><Link to="/cars">Cars</Link></li>
+            <li><Link to="/about">About</Link></li>
             <li><Link to="/profile">My Profile</Link></li>
             <li><Link to="/signout">Sign Out</Link></li>
           </>
